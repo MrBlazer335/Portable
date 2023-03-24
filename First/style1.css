@@ -1,0 +1,140 @@
+*{
+   background:white;
+}
+@font-face {
+    font-family:Poppins;
+    src: url(font/Poppins-Black.ttf);
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.content{
+    font-family: Poppins;
+    position: absolute;
+    margin-left: 1450px;
+    color: #060606;
+    width: 599px;
+    height: 370px;
+    left:-400px;
+    top:360px;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 75px;
+}
+.lorem{
+    position: absolute;
+    margin-left: 1450px;
+    left:-400px;
+    top:538px;
+    width: 785px;
+    height: 62px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color:rgba(0,0,0,0.6);
+}
+
+.finale{
+    font-family: Poppins;
+    position: absolute;
+    margin-left: 1450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 23px;
+    gap: 10px;
+    width: 300px;
+    height: 16.01px;
+    left: -405px;
+    top: 745px;
+    border-radius: 10px;
+    border-color: none;
+    background-color:#F0F1F6;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: hidden;
+    
+}
+
+
+
+.lol_prank{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("img/img.jpg");
+    width: 38%;
+    top:-5px;
+    height: 100.4%;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    top: 40px;
+    text-decoration: none;
+    position: relative;
+    
+
+    margin-left: 75%;
+}
+nav ul{
+    text-decoration: none;
+    margin-bottom: 200px;
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li{
+padding: 30px;
+text-align: 200px;
+display: inline;
+font-weight: 0.5;
+}
+nav ul li a{
+    font-style: normal;
+    font-weight: 0.5;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Poppins;
+    text-decoration: none;
+    color: #060606;
+}
+.button{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    top: 741px;
+    margin-left: 1403px;
+    background: #060606;
+    border-radius: 10px;
+    width: 130px;
+    height: 62px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: rgba(251, 252, 253, 0.94);
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.square{
+    position: absolute;
+    left:93%;
+    top:86%;
+}
