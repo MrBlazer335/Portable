@@ -1,0 +1,25 @@
+.menu{
+	display: center;
+	text-align: center;
+	list-style: none;
+}
+.menu li{
+	text-align: center;
+	display:inline;
+}
+.menu li a{
+	font-size: xx-large;
+	color:aliceblue;
+	margin-right:100px ;
+	text-decoration: none;
+}
+.img{
+	position: absolute;
+	left:500px;
+	background-image: url(/img/kitty.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width:1000px;
+	height: 200px;
+}
