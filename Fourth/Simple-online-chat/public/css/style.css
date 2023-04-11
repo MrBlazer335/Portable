@@ -40,12 +40,43 @@
 @media only screen and (min-width: 845px) {
     /* ваши стили здесь */
     .first {
-        font-size:83px;
+        font-size: 83px;
         margin-top: 36%;
         text-align: center;
-        text-shadow: 4px 30px 2px rgba(0,0,0,0.3);
+        text-shadow: 4px 30px 2px rgba(0, 0, 0, 0.3);
+    }
 
-
+    .btn-reg {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        padding: 7% 12%;
+        margin: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        transition: .5s;
+        font-size: x-large;
+    }
+    .btn-log {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        padding: 7% 14%;
+        margin: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #9EF091 0%, #4831F8 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        transition: .5s;
+        font-size: x-large;
     }
 }
 @media only screen and (min-width: 1000px) {
@@ -54,5 +85,16 @@
         position: absolute;
         top:-112%;
         left: 30%;
+    }
+    .btn-reg{
+        background-color: #f1f1f1;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
     }
 }
