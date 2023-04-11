@@ -5,6 +5,11 @@
     font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto Slab', serif;
 }
+a:hover {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+    transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
 a{
     text-decoration: none;
 }
@@ -41,6 +46,11 @@ a{
 
 /* стили для устройств с шириной экрана больше 844px */
 @media only screen and (min-width: 845px) {
+    a:hover {
+        color: #ff6600;
+        border-bottom: 2px solid #ff6600;
+        transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+    }
     /* ваши стили здесь */
     .first {
         font-size: 83px;
@@ -50,6 +60,7 @@ a{
     }
 
     .btn-reg {
+        text-shadow: none;
         text-decoration: none;
         display: inline-block;
         color: white;
@@ -65,7 +76,9 @@ a{
         transition: .5s;
         font-size: x-large;
     }
+
     .btn-log {
+        text-shadow: none;
         text-decoration: none;
         display: inline-block;
         color: white;
@@ -80,6 +93,7 @@ a{
         box-shadow: 0 0 20px rgba(0, 0, 0, .1);
         transition: .5s;
         font-size: x-large;
+
     }
 }
 @media only screen and (min-width: 1000px) {
@@ -90,7 +104,7 @@ a{
         left: 30%;
     }
     .btn-reg {
-        text-decoration: none;
+        text-shadow: none;
         display: inline-block;
         color: white;
         padding: 7% 12%;
@@ -105,7 +119,10 @@ a{
         transition: .5s;
         font-size: x-large;
     }
+
+
     .btn-log {
+        text-shadow: none;
         text-decoration: none;
         display: inline-block;
         color: white;
@@ -120,5 +137,7 @@ a{
         box-shadow: 0 0 20px rgba(0, 0, 0, .1);
         transition: .5s;
         font-size: x-large;
+
     }
+
 }
