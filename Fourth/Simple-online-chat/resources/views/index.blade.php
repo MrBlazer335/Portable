@@ -4,6 +4,7 @@
 
 
 @section('content')
+    <div class="Head"></div>
     <div class="main">
         <div class="first">
         <h1>Hi!</h1><br>

@@ -1,5 +1,4 @@
 * {
-    font-size:50px;
     color: white;
     margin:0;
     padding: 0;
@@ -41,8 +40,12 @@
 @media only screen and (min-width: 845px) {
     /* ваши стили здесь */
     .first {
-        margin-top: 75%;
+        font-size:83px;
+        margin-top: 36%;
         text-align: center;
+        text-shadow: 4px 30px 2px rgba(0,0,0,0.3);
+
+
     }
 }
 @media only screen and (min-width: 1000px) {
