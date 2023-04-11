@@ -4,7 +4,7 @@
 
 
 @section('content')
-
+<h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
     <div class="main">
         <div class="first">
         <h1>Hi!</h1><br>
