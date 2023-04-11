@@ -1,0 +1,55 @@
+* {
+    font-size:50px;
+    color: white;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+}
+.main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    touch-action: none;
+    user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-drag: none;
+    -ms-user-select: none;
+}
+/* стили для устройств с шириной экрана от 0px до 390px */
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+    /* ваши стили здесь */
+    .first {
+        margin-top: 50%;
+    }
+}
+/* стили для устройств с шириной экрана от 391px до 844px */
+@media only screen and (min-width: 391px) and (max-width: 844px) {
+.first{
+    margin-top: 50%;
+}
+}
+
+/* стили для устройств с шириной экрана больше 844px */
+@media only screen and (min-width: 845px) {
+    /* ваши стили здесь */
+    .first {
+        margin-top: 75%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    /* ваши стили здесь */
+    .first{
+        position: absolute;
+        top:-112%;
+        left: 30%;
+    }
+}
