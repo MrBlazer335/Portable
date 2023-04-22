@@ -12,5 +12,7 @@
             <img src="{{ asset('img/Double Square.png') }}" alt="Square">
         </div>
         <div class="d-md-none col-2 d-flex flex-column h-30 fixed-bottom" style="width: 30%; height: 14%;"><img src="{{ asset('img/Double Square.png') }}" alt="Square"></div>
-
+        <div class="col-1.5 position-absolute top-0 end-0 p-0 m-0 d-none d-md-block" style="right: 0; top: 0;">
+            <img src="{{asset('img/Double Square.png')}}" alt="Square">
+        </div>
 @endsection
