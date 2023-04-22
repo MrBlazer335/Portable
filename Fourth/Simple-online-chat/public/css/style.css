@@ -1,3 +1,99 @@
 body{
     color: black;
 }
+.left-top{
+position: fixed;
+    width: 20rem;
+}
+.left-bottom{
+    position: fixed;
+    width: 20rem;
+    bottom:0;
+    left: 0;
+}
+.right-top{
+    position: fixed;
+    right: 0;
+    width: 20rem;
+}
+.right-bottom{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    width: 20rem;
+}
+span{
+    position: fixed;
+    color: #a0aec0;
+    font-size: 5rem;
+    left:40%;
+    top:10%;
+}
+@media screen and (max-width: 1200px){
+    span{
+        position: fixed;
+        color: #a0aec0;
+        font-size: 4rem;
+        left:34%;
+        top:10%;
+    }
+    .left-top{
+        position: fixed;
+        width: 10rem;
+    }
+    .left-bottom{
+        position: fixed;
+        width: 10rem;
+        bottom:0;
+        left: 0;
+    }
+    .right-top{
+        position: fixed;
+        right: 0;
+        width: 10rem;
+    }
+    .right-bottom{
+        position: fixed;
+        right: 0;
+        bottom:0;
+        width: 10rem;
+    }
+}
+@media screen and (max-width: 844px) {
+    span{
+        position: fixed;
+        color: #a0aec0;
+        font-size: 3em;
+        left:24%;
+        top:15%;
+    }
+    .left-top{
+        position: fixed;
+        width: 7rem;
+    }
+    .left-bottom{
+        position: fixed;
+        width: 7rem;
+        bottom:0;
+        left: 0;
+    }
+    .right-top{
+        position: fixed;
+        right: 0;
+        width: 7rem;
+    }
+    .right-bottom{
+        position: fixed;
+        right: 0;
+        bottom:0;
+        width: 7rem;
+    }
+}
+@media screen and (max-width: 568px){
+span{
+    position:fixed;
+    top:23%;
+    font-size: 2em;
+    left:32%;
+    }
+}
