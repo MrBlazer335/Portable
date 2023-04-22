@@ -10,7 +10,7 @@
         <span>Welcome!</span>
             <form>
                 <label for="input-field" class="mb-3">Login</label>
-                <input type="text" id="input-field" name="Login" class="mb-4" placeholder="✉ | Exemple@gmail.com">
+                <input type="text" id="input-field" name="Login" class="mb-4" placeholder="✉️ | Exemple@gmail.com">
                 <label for="input-field" class="mb-3">Password</label>
                 <input type="password" id="input-field" name="Password" placeholder="🔒 | ********">
                 <a href="#" class="btn-link text-primary text-decoration-none fw-bold mt-2">Forget password?</a>
