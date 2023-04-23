@@ -8,11 +8,12 @@
     <img class="right-top" src="{{asset('img/Double Square.png')}}" alt="#">
     <img class="right-bottom" src="{{asset('img/Circle with Triangle.png')}}" alt="#">
         <span>Welcome!</span>
-            <form>
+            <form method="POST" action="{{route('Login')}}">
+                @csrf
                 <label for="input-field1" class="mb-3">Login</label>
-                <input type="text" id="input-field1" name="Login" class="mb-4" placeholder="✉️ | Exemple@gmail.com">
+                <input type="text" id="input-field1" name="email" class="mb-4" placeholder="✉️ | Exemple@exemple.com">
                 <label for="input-field2" class="mb-3">Password</label>
-                <input type="password" id="input-field2" name="Password" placeholder="🔒 | ********">
+                <input type="password" id="input-field2" name="password" placeholder="🔒 | ********">
                 <a href="#" class="btn-link text-primary text-decoration-none fw-bold mt-2">Forget password?</a>
                 <button type="submit" class="btn btn-lg bg-primary text-white mt-3">Log in</button>
                 <hr class="mt-4">

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::post('/',[UserAuth::class,'loginUser'])->name('Login');
 Route::get('/register',function (){
     return view('user.register');
+});
+Route::post('/registerpls',[UserAuth::class,'registerUser'])->name('Registration');
+Route::get('/home',function (){
+   return view('home');
 });
