@@ -1,0 +1,16 @@
+.icon-go{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top:69%;
+    right:51%;
+}
+@media screen and (max-width: 568px) {
+    .icon-go{
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        top:91%;
+        right:38%;
+    }
+}

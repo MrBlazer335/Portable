@@ -3,10 +3,10 @@
 @section('title','HomePage')
 
 @section('content')
-    <img class="left-top" src="{{asset('img/Triangle with Circle.png')}}" alt="Design">
-    <img class="left-bottom" src="{{asset('img/Double Square.png')}}" alt="Design">
-    <img class="right-top" src="{{asset('img/Double Square.png')}}" alt="Design">
-    <img class="right-bottom" src="{{asset('img/Circle with Triangle.png')}}" alt="Damn">
+    <img class="left-top" src="{{asset('img/Triangle with Circle.png')}}" alt="#">
+    <img class="left-bottom" src="{{asset('img/Double Square.png')}}" alt="#">
+    <img class="right-top" src="{{asset('img/Double Square.png')}}" alt="#">
+    <img class="right-bottom" src="{{asset('img/Circle with Triangle.png')}}" alt="#">
         <span>Welcome!</span>
             <form>
                 <label for="input-field1" class="mb-3">Login</label>
@@ -17,7 +17,7 @@
                 <button type="submit" class="btn btn-lg bg-primary text-white mt-3">Log in</button>
                 <hr class="mt-4">
                     <img src="{{asset('img/icon-google.svg')}}" class="icon-g me-2" alt="Google">
-                <p class="mt-5">Dont have account? <a href="#" class="btn btn-link text-decoration-none fw-bold text-primary">Sign up</a></p>
+                <p class="mt-5">Dont have account? <a href="{{url('/register')}}" class="btn btn-link text-decoration-none fw-bold text-primary">Sign up</a></p>
             </form>
 
 
