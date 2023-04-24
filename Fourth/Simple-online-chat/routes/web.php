@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserAuth;
+use App\Http\Controllers\AuthMain;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +14,20 @@ use App\Http\Controllers\UserAuth;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('index');
-});
-Route::post('/',[UserAuth::class,'loginUser'])->name('Login');
+})->name('Login');
 Route::get('/register',function (){
-    return view('user.register');
+   return view('user.register');
 });
-Route::post('/registerpls',[UserAuth::class,'registerUser'])->name('Registration');
+Route::post('/register',[AuthMain::class,'Registration'])->name('SignUp');
 Route::get('/home',function (){
-   return view('home');
+    return view('home');
 });
+Route::post('/',[AuthMain::class,'Login'])->name('SignUp');
+Route::middleware('auth')->group(function () {
+    Route::get('/home', function () {
+        return view('home');
+    });
+});
+

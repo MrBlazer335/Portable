@@ -8,7 +8,7 @@
     <img class="right-top" src="{{asset('img/Double Square.png')}}" alt="#">
     <img class="right-bottom" src="{{asset('img/Circle with Triangle.png')}}" alt="#">
         <span>Welcome!</span>
-            <form method="POST" action="{{route('Login')}}">
+            <form method="POST" action="{{route('SignUp')}}">
                 @csrf
                 <label for="input-field1" class="mb-3">Login</label>
                 <input type="text" id="input-field1" name="email" class="mb-4" placeholder="✉️ | Exemple@exemple.com">
@@ -20,6 +20,10 @@
                     <img src="{{asset('img/icon-google.svg')}}" class="icon-g me-2" alt="Google">
                 <p class="mt-5">Dont have account? <a href="{{url('/register')}}" class="btn btn-link text-decoration-none fw-bold text-primary">Sign up</a></p>
             </form>
-
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
 
 @endsection
