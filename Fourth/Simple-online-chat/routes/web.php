@@ -35,9 +35,12 @@ Route::get('/auth/redirect',function (){
 
 Route::get('/auth/google/call-back',[\App\Http\Controllers\GoogleAuth::class,'Google'])->name('Google_Handle');
 
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/home', function () {
         return view('home');
     });
+    Route::get('/logout',[AuthMain::class,'LogOut'])->name('LogOut');
 });
 

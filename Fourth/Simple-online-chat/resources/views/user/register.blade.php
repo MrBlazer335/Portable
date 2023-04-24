@@ -1,5 +1,7 @@
 @extends('layout.layout')
-
+@section('head')
+<link href="{{asset('css/style1.css')}}" rel="stylesheet">
+@endsection
 @section('title','Registration')
 @section('content')
 <img class="left-top" src="{{asset('img/Triangle with Circle.png')}}" alt="#">

@@ -39,4 +39,8 @@ class AuthMain extends Controller
         $request->session()->save();
         return redirect('/home');
     }
+    public function LogOut(){
+        session()->forget('user_id');
+        return redirect('/');
+    }
 }
