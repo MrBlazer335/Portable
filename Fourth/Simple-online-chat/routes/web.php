@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthMain;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,8 @@ use App\Http\Controllers\AuthMain;
 Route::get('/', function() {
     return view('index');
 })->name('Login');
+
+
 Route::get('/register',function (){
    return view('user.register');
 });
@@ -25,6 +28,13 @@ Route::get('/home',function (){
     return view('home');
 });
 Route::post('/',[AuthMain::class,'Login'])->name('SignUp');
+
+Route::get('/auth/redirect',function (){
+    return Socialite::driver('google')->redirect();
+})->name('redirect');
+
+Route::get('/auth/google/call-back',[\App\Http\Controllers\GoogleAuth::class,'Google'])->name('Google_Handle');
+
 Route::middleware('auth')->group(function () {
     Route::get('/home', function () {
         return view('home');

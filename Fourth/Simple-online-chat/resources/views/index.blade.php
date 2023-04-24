@@ -17,7 +17,7 @@
                 <a href="#" class="btn-link text-primary text-decoration-none fw-bold mt-2">Forget password?</a>
                 <button type="submit" class="btn btn-lg bg-primary text-white mt-3">Log in</button>
                 <hr class="mt-4">
-                    <img src="{{asset('img/icon-google.svg')}}" class="icon-g me-2" alt="Google">
+                <a href="{{route('redirect')}}"> <img src="{{asset('img/icon-google.svg')}}" class="icon-g me-2" alt="Google"></a>
                 <p class="mt-5">Dont have account? <a href="{{url('/register')}}" class="btn btn-link text-decoration-none fw-bold text-primary">Sign up</a></p>
             </form>
     @if (session('error'))

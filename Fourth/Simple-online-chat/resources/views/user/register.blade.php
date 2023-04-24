@@ -20,7 +20,7 @@
     <input type="password" id="input-password1" name="password_confirmation" placeholder="🔒 | ********">
     <button type="submit" class="btn btn-lg bg-primary text-white mt-3">Log in</button>
     <hr class="mt-4">
-    <img src="{{asset('img/icon-google.svg')}}" class="icon-go me-2" alt="Google">
+    <a href="{{route('redirect')}}"><img src="{{asset('img/icon-google.svg')}}" class="icon-go me-2" alt="Google"></a>
     <p class="mt-1">Have account? <a href="{{url('/')}}" class="btn btn-link text-decoration-none fw-bold text-primary">Sign in</a></p>
 </form>
 @if ($errors->any())
