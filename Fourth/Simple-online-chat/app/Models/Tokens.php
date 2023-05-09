@@ -5,7 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Persona extends Model
+class Tokens extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'token',
+        'expires_at',
+        'user_id'
+
+    ];
+
 }

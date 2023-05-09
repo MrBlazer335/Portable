@@ -10,7 +10,7 @@
 <img class="right-bottom" src="{{asset('img/Circle with Triangle.png')}}" alt="#">
 
 <span>Register</span>
-<form method="POST" action="#">
+<form method="POST" action="{{route('Registration')}}">
     @csrf
     <label for="input-name" class="mb-2">Name</label>
     <input type="text" id="input-name" name="name" class="mb-2" placeholder="📛 | John">

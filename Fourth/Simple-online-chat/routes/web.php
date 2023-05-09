@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthMain;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\SendEmail;
+use App\Http\Controllers\TokenCreation;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,18 +18,16 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', function() {
+Route::get('/',function (){
     return view('index');
-})->name('Login');
+})->name('index');
 
 
 Route::get('/register',function (){
    return view('user.register');
 });
-Route::post('/register',[AuthMain::class,'Registration'])->name('SignUp');
-Route::get('/home',function (){
-    return view('home');
-});
+Route::post('/register',[AuthMain::class,'Registration'])->name('Registration');
+
 Route::post('/',[AuthMain::class,'Login'])->name('SignUp');
 
 Route::get('/auth/redirect',function (){
@@ -36,11 +37,18 @@ Route::get('/auth/redirect',function (){
 Route::get('/auth/google/call-back',[\App\Http\Controllers\GoogleAuth::class,'Google'])->name('Google_Handle');
 
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/email/verify',[\App\Http\Controllers\TokenCreation::class,'RegisterToken'])->name('TokenCheck');
+    Route::post('/token/check',[TokenCreation::class,'TokenAuth'])->name('TokenInput');
+    Route::get('/logout', [AuthMain::class, 'LogOut'])->name('LogOut');
+});
+Route::middleware(['auth','VerifiedEmail'])->group(function () {
 
-Route::middleware('auth')->group(function () {
     Route::get('/home', function () {
         return view('home');
     });
-    Route::get('/logout',[AuthMain::class,'LogOut'])->name('LogOut');
+    Route::get('/testlink', [SendEmail::class, 'VerifyEmail']);
 });
+
+
 

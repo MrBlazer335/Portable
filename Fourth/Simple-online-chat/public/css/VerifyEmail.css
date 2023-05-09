@@ -1,0 +1,28 @@
+.wow{
+    padding-top:10px ;
+    position: relative;
+    top:50%;
+
+}
+.container{
+    position: absolute;
+    top:50%;
+}
+.Text{
+    text-align: center;
+    background: white;
+    width: 90%;
+    height: 50vh;
+}
+.Text-text{
+}
+.form{
+    position: absolute;
+    top:45%;
+    left:35%;
+
+}
+a{
+    color:black;
+    text-decoration: none;
+}

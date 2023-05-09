@@ -40,7 +40,7 @@ class AuthMain extends Controller
         return redirect('/home');
     }
     public function LogOut(){
-        session()->forget('user_id');
+        Auth::logout();
         return redirect('/');
     }
 }

@@ -19,6 +19,7 @@ class GoogleAuth extends Controller
             $newUser = new User;
             $newUser->name = $user->getName();
             $newUser->email = $user->getEmail();
+            $newUser->google_id = $user->getId();
             $newUser->save();
             auth()->login($newUser);
         }
